@@ -4,6 +4,21 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+""""""""""""""""""""""""""""""
+" => Load Vundle
+""""""""""""""""""""""""""""""
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim_runtime/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe', {'rtp': '../bundle/YouCompleteMe'}
+
+filetype plugin indent on    " required
 
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
